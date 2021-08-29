@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+  <link href="./img/crow.svg" crossorigin="anonymous">
+  <title>PVU Helper</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/groups.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/forum.css">
+  <script src="https://kit.fontawesome.com/871bfce724.js" crossorigin="anonymous"></script>
+  <script src="./scripts/scrollreveal.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav">
+        <li><a href="index.html">News</a></li>
+        <li><a href="groups.html">Group tracker</a></li>
+        <li><a href="plant.html">Plant tracker</a></li>
+        <li><a href="land.html">Land tracker</a></li>
+      </div>
+    </nav>
+
+    <div id="hamburger" class="hamburger"></div>
+    <div id="container-responsive" class="nav-responsive esconder">
+        <li><a href="index.html">News</a></li>
+        <li><a href="groups.html">Group tracker</a></li>
+        <li><a class="hola" href="#">Plant tracker</a></li>
+        <li><a href="#">Land tracker</a></li>
+        <div class="separator"></div>
+        <li><a href="">Official discord</a></li>
+        <li><a href="">Community discord</a></li>
+    </div>
+  </header>
+
+    <main>
+
+
+
+        <section class="section-hour">
+
+            <div class="text">
+                <h2>IN GAME TIME</h2>
+                <p>Server hour (UTC)</p>
+            </div>
+
+            <div class="server-hour">
+                <h3 id="reloj"></h3>
+            </div>
+
+            <div class="text">
+                <h2>NEXT RESET</h2>
+                <p>(UTC)</p>
+            </div>
+            <div class="server-hour">
+                <h3 id="relojReset"></h3>
+            </div>
+        </section>
+    
+
+        <section class="game">
+            <h3>In game now:</h3>
+            <h3 id="group"></h3>
+        </section>
+
+        <section class="wallet">
+            <h3>
+                A small donation for the page would help us a lot, thank you :D</h3>
+                
+                <p> Wallet: 0x95101C5ee956D091041Df3C818971D9dcd992D36</p>
+
+                
+                <progress max="100" value="1"></progress>
+
+                <p>At the end of the progress bar, we will launch the Land tracker and Plant tracker for the use of the entire community.</p>
+                <img src="img/corazon.png" alt="">
+            </section>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="scripts/hour.js" refer></script>
+        <script src="scripts/reveal.js"></script>
+        <script src="scripts/responsive.js"></script>
+    </main>
+
+    <style>
+        main {
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background: url("https://marketplace.plantvsundead.com/_nuxt/img/bg-farm.a2ecfd3.svg");
+    background-size: cover;
+        }
+
+        progress {
+border: none;
+border-radius: 2rem;
+width: 80%;
+height: 9px;
+animation: prog 2s linear;
+}
+
+::-webkit-progress-bar-value {background-color: #1DA1F2; border-radius: 2rem;}
+::-webkit-progress-value {background-color: #1DA1F2; border-radius: 2rem;}
+::-moz-progress-bar {background-color: #1DA1F2; border-radius: 2rem;}
+
+    </style>
+</body>
+
+</html>

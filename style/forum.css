@@ -1,0 +1,117 @@
+.container{
+    height: calc(100vh - 50px);
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+	width: 7px;
+}
+
+.container::-webkit-scrollbar-thumb {
+	background:rgb(255, 196, 0);
+    border: rgb(144, 127, 87) 1px solid;
+    border-radius: 10px;
+}
+
+
+.container .background-grande{
+    margin: 10px auto;
+    background-color: #151620;
+    width: 420px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.background-chico{
+    border-radius: 10px;
+    margin-top: 1.2rem;
+    margin-left:1.2rem;
+    background-color:rgb(26,29,40);
+    width: 300px;
+    border-color: black;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.background-chico::-webkit-scrollbar {
+    width: 7px;
+}
+
+.background-chico::-webkit-scrollbar-thumb {
+    background:rgb(255, 196, 0);
+    border: rgb(144, 127, 87) 1px solid;
+    border-radius: 10px;
+}
+
+.background-chico:active{
+    border: white 1px solid;
+}
+
+.noticia{
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+
+.background-autor{
+    margin-left:1.2rem;
+    background-color:rgb(26,29,40);
+    width: 120px;
+    border-radius: 10px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.background-autor a{
+    color: white;
+    margin-top: 8px;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+
+.footer-container .background-date{
+    margin-left:1.2rem;
+    background-color:rgb(26,29,40);
+    width: 240px;
+    border-radius: 10px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.footer-container .background-date p{
+    color: white;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 580px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .container .background-grande{
+        width: 100%;
+    
+    }
+    .container .background-chico{
+        width: 80%;
+    }
+}
