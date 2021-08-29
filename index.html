@@ -8,8 +8,9 @@
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
   <link href="./img/crow.svg" crossorigin="anonymous">
   <title>PVU Helper</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/groups.css">
   <link rel="stylesheet" href="style/responsive.css">
+  <link rel="stylesheet" href="style/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
   
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -21,98 +22,98 @@
 <body>
   <header>
     <nav>
-      <div class="nav">
-        <li><a href="index.html">News</a></li>
-        <li><a href="groups.html">Group tracker</a></li>
-        <li><a href="plant.html">Plant tracker</a></li> 
-        <li><a href="land.html">Land tracker</a></li>
-      </div>
-    </nav>
-
-    <div id="hamburger" class="hamburger"></div>
-    <div id="container-responsive" class="nav-responsive esconder">
-        <li class="fas fa-exclamation"><a href="index.html">News</a></li>
-        <li  class="far fa-compass"><a href="groups.html">Group tracker</a></li>
-        <li class="fas fa-seedling"> <a href="#">Plant tracker</a> </li>
-        <li class="fas fa-crow" > <a href="#">Land tracker</a></li>
-        <div class="separator"></div>
-        <li  class="fab fa-discord"><a href="">Official discord</a></li>
-        <li  class="fab fa-discord"><a href="">Community discord</a></li>
+    <div class="nav">
+      <li><a href="groups.html">News</a></li>
+      <li><a href="index.html">Group tracker</a></li>
+      <li><a href="plant.html">Plant tracker</a></li> 
+      <li><a href="land.html">Land tracker</a></li>
     </div>
-  </header>
+  </nav>
+
+  <div id="hamburger" class="hamburger"></div>
+  <div id="container-responsive" class="nav-responsive esconder">
+      <li class="fas fa-exclamation"><a class="primerA" href="index.html">News</a></li>
+      <li  class="far fa-compass"><a class="primerB" href="groups.html">Group tracker</a></li>
+      <li class="fas fa-seedling"> <a class="primerC"  href="plant.html">Plant tracker</a> </li>
+      <li class="fas fa-crow" > <a class="primerD"  href="land.html">Land tracker</a></li>
+      <div class="separator"></div>
+      <li  class="fab fa-discord"><a href="">Official discord</a></li>
+      <li  class="fab fa-discord"><a href="">Community discord</a></li>
+  </div>
+</header>
+
+    <main>
 
 
-  <main>
 
+        <section class="section-hour">
 
-    <section class="container">
-      <div class="background-grande">
+            <div class="text">
+                <h2>IN GAME TIME</h2>
+                <p>Server hour (UTC)</p>
+            </div>
 
-        <div class="background-chico">
+            <div class="server-hour">
+                <h3 id="reloj"></h3>
+            </div>
 
-          <p class="noticia">The server will be opened within 3 hours in the 3-groups rotation format. However, we have disabled "helping your neighbors", exchanging LE to PVU, and claiming seeds features to have them fixed. So, tend to your farm and wait for our next announcement.!</p>
-        </div>
-        <section class="footer-container">
-          <div class="background-autor"><a href="#" class="autor">JangMin</a></div>
-          <div class="background-date">
-            <p class="autor">27/08/2021 12:00 UTC </p>
-          </div>
+            <div class="text">
+                <h2>NEXT RESET</h2>
+                <p>(UTC)</p>
+            </div>
+            <div class="server-hour">
+                <h3 id="relojReset"></h3>
+            </div>
         </section>
-      </div>
+    
 
-      <div class="background-grande">
-
-        <div class="background-chico">
-
-          <p class="noticia">Liquidity Added!</p>
-        </div>
-        <section class="footer-container">
-          <div class="background-autor"><a href="#" class="autor">JangMin</a></div>
-          <div class="background-date">
-            <p class="autor">28/08/2021  13:29 UTC </p>
-          </div>
+        <section class="game">
+            <h3>In game now:</h3>
+            <h3 id="group"></h3>
         </section>
-      </div>
 
-      <div class="background-grande">
+        <section class="wallet">
+            <h3>
+                A small donation for the page would help us a lot, thank you :D</h3>
+                
+                <p> Wallet: 0x95101C5ee956D091041Df3C818971D9dcd992D36</p>
 
-        <div class="background-chico">
+                
+                <progress max="100" value="1"></progress>
 
-          <p class="noticia">More than 22,000 seeds are sold. Only 4400 seeds left. 
-            If your transaction when buying seed is failed, it means all seeds are sold out. Bundles will be unavailable after that, too.!</p>
-        </div>
-        <section class="footer-container">
-          <div class="background-autor"><a href="#" class="autor">JangMin</a></div>
-          <div class="background-date">
-            <p class="autor">28/08/2021 12:00 UTC </p>
-          </div>
-        </section>
-      </div>
-
-    </section>
-
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-    crossorigin="anonymous"></script>
-  <script src="scripts/reveal.js"></script>
-  <script src="scripts/responsive.js"></script>
+                <p>At the end of the progress bar, we will launch the Land tracker and Plant tracker for the use of the entire community.</p>
+                <img src="img/corazon.png" alt="">
+            </section>
 
 
-  <style>
-            main {
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="scripts/hour.js" refer></script>
+        <script src="scripts/reveal.js"></script>
+        <script src="scripts/responsive.js"></script>
+    </main>
+
+    <style>
+        main {
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background: url("https://marketplace.plantvsundead.com/_nuxt/img/bg-farm.a2ecfd3.svg");
     background-size: cover;
+        }
 
+        progress {
+border: none;
+border-radius: 2rem;
+width: 80%;
+height: 9px;
+animation: prog 2s linear;
 }
 
-  </style>
+::-webkit-progress-bar-value {background-color: #1DA1F2; border-radius: 2rem;}
+::-webkit-progress-value {background-color: #1DA1F2; border-radius: 2rem;}
+::-moz-progress-bar {background-color: #1DA1F2; border-radius: 2rem;}
+
+    </style>
 </body>
 
 </html>
