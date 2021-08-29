@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://marketplace.plantvsundead.com/_nuxt/img/bg-farm.a2ecfd3.svg");
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main img{
+    margin-top: 150px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}

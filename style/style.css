@@ -146,7 +146,7 @@ margin: 0.9rem;
 
   .nav-responsive{
       width: 100%;
-      min-height: calc(100% - 50px);
+      height: calc(100vh - 50px);
       background-color: rgb(113,189,38);      
       display: flex;
       position: absolute;
@@ -168,11 +168,16 @@ margin: 0.9rem;
       font-size: 35px;
       
   }
-  .fas:nth-child(1){
-    color: rgb(165, 255, 46)
-    padding-left: 25px;
-  }
- 
+
+ .primerA{
+   margin-left: 20px;
+ }
+ .primerB{
+  margin-left: 6px;
+}
+.primerD{
+  margin-right: 16px;
+}
   .fas:nth-child(3){
     color: rgb(165, 255, 46)
   }
